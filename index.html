@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podcast</title>
+</head>
+<body>
+    <div id="Box"><h1 id="Title">Passion Project Podcast</h1></div>
+    <div id="body">
+        <div id="data"><h2>Introduction</h2><audio id="part1" controls src="Introduction.m4a"></audio><div>
+            <div id="buttons">
+              <button id="play" onclick="play1()"><img src="play.png" alt=""></button>
+              <button id="restart" onclick="restart()"><img src="https://www.freeiconspng.com/thumbs/restart-icon/black-panel-restart-system-icon--6.png" alt=""></button>
+          </div>
+          <div id="data"><h2>History</h2><audio id="part2" controls src="History.m4a"></audio><div>
+            <div id="buttons">
+              <button id="play" onclick="play2()"><img src="play.png" alt=""></button>
+              <button id="restart" onclick="restart2()"><img src="https://www.freeiconspng.com/thumbs/restart-icon/black-panel-restart-system-icon--6.png" alt=""></button>
+          </div>
+          <div id="data"><h2>Personal Story</h2><audio id="part3" controls src="Personal Story.m4a"></audio><div>
+            <div id="buttons">
+              <button id="play" onclick="play3()"><img src="play.png" alt=""></button>
+              <button id="restart" onclick="restart3()"><img src="https://www.freeiconspng.com/thumbs/restart-icon/black-panel-restart-system-icon--6.png" alt=""></button>
+          </div>
+          <div id="data"><h2>Coding</h2><audio id="part4" controls src="Coding.m4a"></audio><div>
+            <div id="buttons">
+              <button id="play" onclick="play4()"><img src="play.png" alt=""></button>
+              <button id="restart" onclick="restart4()"><img src="https://www.freeiconspng.com/thumbs/restart-icon/black-panel-restart-system-icon--6.png" alt=""></button>
+          </div>
+          <div id="data"><h2>Youtube</h2><audio id="part5" controls src="Youtube.m4a"></audio><div>
+            <div id="buttons">
+              <button id="play" onclick="play5()"><img src="play.png" alt=""></button>
+              <button id="restart" onclick="restart5()"><img src="https://www.freeiconspng.com/thumbs/restart-icon/black-panel-restart-system-icon--6.png" alt=""></button>
+          </div>
+          <div id="data"><h2>People I Admire</h2><audio id="part6" controls src="People I Admire.m4a"></audio><div>
+            <div id="buttons">
+              <button id="play" onclick="play6()"><img src="play.png" alt=""></button>
+              <button id="restart" onclick="restart6()"><img src="https://www.freeiconspng.com/thumbs/restart-icon/black-panel-restart-system-icon--6.png" alt=""></button>
+          </div>
+          <div id="data"><h2>Outro</h2><audio id="part7" controls src="Outro.m4a"></audio><div>
+            <div id="buttons">
+              <button id="play" onclick="play7()"><img src="play.png" alt=""></button>
+              <button id="restart" onclick="restart7()"><img src="https://www.freeiconspng.com/thumbs/restart-icon/black-panel-restart-system-icon--6.png" alt=""></button>
+          </div>
+        </div>
+    </div> 
+</body>
+<script>
+  function play1(){
+    var audio = document.getElementById("part1");
+    if (audio.paused){
+      audio.play();
+        }
+    else {
+      audio.pause();
+    }
+  }
+  function restart(){
+    document.getElementById("part1").currentTime = 0;
+  }
+
+  function play2(){
+    var audio = document.getElementById("part2");
+    if (audio.paused){
+      audio.play();
+        }
+    else {
+      audio.pause();
+    }
+  }
+  function restart2(){
+    document.getElementById("part2").currentTime = 0;
+  }
+  function play3(){
+    var audio = document.getElementById("part3");
+    if (audio.paused){
+      audio.play();
+        }
+    else {
+      audio.pause();
+    }
+  }
+  function restart3(){
+    document.getElementById("part3").currentTime = 0;
+  }
+  function play4(){
+    var audio = document.getElementById("part4");
+    if (audio.paused){
+      audio.play();
+        }
+    else {
+      audio.pause();
+    }
+  }
+  function restart4(){
+    document.getElementById("part4").currentTime = 0;
+  }
+  function play5(){
+    var audio = document.getElementById("part5");
+    if (audio.paused){
+      audio.play();
+        }
+    else {
+      audio.pause();
+    }
+  }
+  function restart5(){
+    document.getElementById("part5").currentTime = 0;
+  }
+  function play6(){
+    var audio = document.getElementById("part6");
+    if (audio.paused){
+      audio.play();
+        }
+    else {
+      audio.pause();
+    }
+  }
+  function restart6(){
+    document.getElementById("part6").currentTime = 0;
+  }
+  function play7(){
+    var audio = document.getElementById("part7");
+    if (audio.paused){
+      audio.play();
+        }
+    else {
+      audio.pause();
+    }
+  }
+  function restart7(){
+    document.getElementById("part7").currentTime = 0;
+  }
+</script>
+<style>
+    body{
+        text-align: center;
+        background-color:rgb(32, 32, 32);
+        color:white;
+    }
+    #Title{
+        font-family: 'Courier New', Courier, monospace;
+        font-size:40px;
+    }
+    #Box{
+        background-color:black;
+        width:100%;
+        height:100px;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        display: flex;
+        top:0;
+        left:0;
+    }
+    #body{
+        margin-top:150px;
+    }
+    h2{
+        font-family:'Courier New', Courier, monospace;
+        font-size:35px;
+    }
+    #data{
+      margin-bottom: 80px;
+    }
+    audio{
+      display: block;
+      margin-left: auto;
+      margin-right:auto;
+      width:300px;
+      height:50px;
+      outline:none;
+    }
+    audio::-webkit-media-controls-panel{
+      background-color: #58bd1d;
+      outline:none;
+    }
+    audio::-webkit-media-controls-mute-button {
+        display: none !important;
+    }
+
+    audio::-webkit-media-controls-volume-slider {
+        display: none !important;
+    }
+    audio::-webkit-media-controls-play-button {
+        display:none;
+    }
+        /* width */
+    ::-webkit-scrollbar {
+      width: 20px;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: #58bd1d;
+      border-radius:20px;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #6bec21;
+    }
+    button{
+      height:30px;
+      width:30px;
+      border-radius:50%;
+      background-color:#58bd1d;
+      border:none;
+      margin:5px;
+      outline:none;
+    }
+    button:hover{
+      background-color:#6bec21;
+    }
+    #buttons{
+      margin-right:200px;
+    }
+    img{
+      height:20px;
+      margin-top:4px;
+    }
+</style>
+</html>
